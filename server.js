@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(path.join(__dirname, 'public')));
 //express routes
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'public/INDEXV2.html'));
+  res.sendFile(path.join(__dirname, 'views/INDEXV2.html'));
 });
 app.get('/about', function(req, res){
   res.sendFile(path.join(__dirname, 'views/about.html'));
